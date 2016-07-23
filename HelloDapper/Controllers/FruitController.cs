@@ -47,7 +47,7 @@ namespace HelloDapper.Controllers
                 return BadRequest("A required parameter is missing or parameter doesn't have the right format");
             }
             _fruitService.FruitUpdate(fruitDtoList);
-            return Content(HttpStatusCode.NoContent, this.GetType());
+            return Content(HttpStatusCode.NoContent, this.GetType()); 
         }
     }
 }
